@@ -5,6 +5,7 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Switch;
@@ -26,12 +27,19 @@ public class AddTransaction extends AppCompatActivity {
         setContentView(R.layout.activity_add_transaction);
             tv = (TextView) findViewById(R.id.textView);
             switch1 = (Switch)findViewById(R.id.switch1);
-             DatePlain = (ExtractEditText)findViewById(R.id.DatePlain);
-                        if (switch1.isChecked()){
-                         DatePlain.setVisibility(View.VISIBLE);
-                         } else {
-                            DatePlain.setVisibility(View.GONE);
-                        }
+        DatePlain = (ExtractEditText)findViewById(R.id.DatePlain);
+        DatePlain.setVisibility(View.GONE);
+            switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked){
+                        DatePlain.setVisibility(View.VISIBLE);
+                    } else {
+                        DatePlain.setVisibility(View.GONE);
+
+                    }
+                }
+            });
 
 
     }

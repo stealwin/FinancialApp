@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Financial App</string>
+    <string name="Description">Описание</string>
+    <string name="TextEnter">Введите текст</string>
+    <string name="Sum">Сумма</string>
+    <string name="TransactionType">Тип транзакции</string>
+    <string name="Category">Категория</string>
+    <string name="Output">Расход</string>
+    <string name="Input">Доход</string>
+    <string name="Empty">0 р.</string>
+    <string name="Planing">Planing</string>
+    <string name="PlaningDate">PlaningDate</string>
+    <string name="Date" />
+
+    <string-array name="categories">
+        <item>Развлечения</item>
+        <item>Еда</item>
+        <item>Спорт</item>
+
+    </string-array>
+</resources>

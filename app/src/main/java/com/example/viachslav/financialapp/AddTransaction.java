@@ -11,9 +11,12 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 public class AddTransaction extends AppCompatActivity {
-        TextView tv;
-        Switch switch1;
-        ExtractEditText DatePlain;
+       TextView tv;
+       Switch switch1;
+       ExtractEditText DatePlain;
+       TextView textView6;
+
+
 
 
 
@@ -21,17 +24,22 @@ public class AddTransaction extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_transaction);
-        tv = (TextView) findViewById(R.id.textView);
-         if (switch1.isChecked()){
-             DatePlain.setVisibility(View.VISIBLE);
-         } else {
-             DatePlain.setVisibility(View.GONE);
-         }
+            tv = (TextView) findViewById(R.id.textView);
+            switch1 = (Switch)findViewById(R.id.switch1);
+             DatePlain = (ExtractEditText)findViewById(R.id.DatePlain);
+                        if (switch1.isChecked()){
+                         DatePlain.setVisibility(View.VISIBLE);
+                         } else {
+                            DatePlain.setVisibility(View.GONE);
+                        }
+
 
     }
 
     public void onRadioButtonClicked (View view){
             boolean checked = ((RadioButton)view).isChecked();
+
+
 
     }
 

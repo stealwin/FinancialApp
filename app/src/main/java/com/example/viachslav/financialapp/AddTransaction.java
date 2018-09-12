@@ -28,10 +28,13 @@ public class AddTransaction extends AppCompatActivity {
             tv = (TextView) findViewById(R.id.textView);
             switch1 = (Switch)findViewById(R.id.switch1);
         DatePlain = (ExtractEditText)findViewById(R.id.DatePlain);
+        //скрываем окно с запланированной датой
         DatePlain.setVisibility(View.GONE);
+        //описываем события свитчера
             switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    //проверяем свитчер если он активен, то окно с датой появляется
                     if (isChecked){
                         DatePlain.setVisibility(View.VISIBLE);
                     } else {

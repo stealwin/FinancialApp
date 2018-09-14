@@ -18,9 +18,6 @@ public class AddTransaction extends AppCompatActivity {
        TextView textView6;
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

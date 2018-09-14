@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <android.inputmethodservice.ExtractEditText
+        android:id="@+id/extractEditText4"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint=""
+        android:inputType="text"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:id="@+id/extractEditText5"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint=""
+        android:inputType="text"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Пароль"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="228dp"
+        tools:text="Пароль" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Логин"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="95dp"
+        tools:text="Логин" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="376dp" />
+</android.support.constraint.ConstraintLayout>
